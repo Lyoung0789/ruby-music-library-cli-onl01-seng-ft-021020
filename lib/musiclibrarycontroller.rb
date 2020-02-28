@@ -2,7 +2,8 @@ require "pry"
 class MusicLibraryController
 
   def initialize(path = './db/mp3s')
-    @new_object = MusicImporter.new(path).import
+    @new_object = MusicImporter.new(path)
+    @new_object.import
   end 
   
   def call 
