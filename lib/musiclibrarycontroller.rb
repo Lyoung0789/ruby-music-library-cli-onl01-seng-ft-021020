@@ -41,5 +41,10 @@ class MusicLibraryController
       puts "#{j+1}. #{i.name}"
     end 
   end 
+  
+  def list_songs_by_artist
+    input = get.chomp
+    "Artist?"
+  end 
 
 end
