@@ -47,7 +47,7 @@ class MusicLibraryController
     input = gets.chomp 
     binding.pry
     if artist = Artist.find_by_name(input)
-      artist.name.sort{|a,b| a.name<=>b.name} 
+      artist.songs.sort{|a,b| a.name<=>b.name} 
   end 
 
 end
