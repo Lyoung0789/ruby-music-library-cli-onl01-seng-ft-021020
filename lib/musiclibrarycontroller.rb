@@ -46,7 +46,7 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.chomp 
     binding.pry
-    input.songs
+    if input
   end 
 
 end
