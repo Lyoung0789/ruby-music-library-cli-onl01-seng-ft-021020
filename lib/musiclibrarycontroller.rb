@@ -46,7 +46,8 @@ class MusicLibraryController
     puts "Please enter the name of an artist:"
     input = gets.chomp 
     binding.pry
-    if input
+    if artist = Artist.find_by_name(input)
+      artist.sort{|a,b| a<=>b} 
   end 
 
 end
