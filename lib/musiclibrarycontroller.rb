@@ -40,7 +40,7 @@ class MusicLibraryController
   def list_songs
     # binding.pry
     Song.all.sort {|song_a,song_b| song_a.name<=>song_b.name}.each_with_index do |i, j| 
-        binding pry 
+        # binding pry 
         puts "#{j+1}. #{i.artist.name} - #{i.name} - #{i.genre.name}"
       end 
   end 
