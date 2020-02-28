@@ -67,6 +67,7 @@ class Song
     # song.artist = Artist.find_or_create_by_name(array[0])
     # song.genre = Genre.find_or_create_by_name(array[2].chomp(".mp3"))
     # song
+    
   end
   
   def self.create_from_filename(file)
