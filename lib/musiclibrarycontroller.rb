@@ -43,8 +43,9 @@ class MusicLibraryController
   end 
   
   def list_songs_by_artist
-    input = get.chomp
+    input = gets.chomp
     "Artist?"
+    input 
   end 
 
 end
